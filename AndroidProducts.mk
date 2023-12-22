@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_lisa.mk
+    $(LOCAL_DIR)/aosp_lisa.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_lisa-user \
-    evolution_lisa-userdebug \
-    evolution_lisa-eng
+    aosp_lisa-user \
+    aosp_lisa-userdebug \
+    aosp_lisa-eng
