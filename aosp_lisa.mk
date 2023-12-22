@@ -11,21 +11,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lisa device
 $(call inherit-product, device/xiaomi/lisa/device.mk)
 
-# Inherit some common PixelOS stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Project Elixir stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Evolution-X Stuff
-EVO_BUILD_TYPE := OFFICIAL
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP := true
+# AOSP Recovery 
+TARGET_USES_AOSP_RECOVERY := true
+
+# OFFICIAL Stuff
+ELIXIR_BUILD_TYPE := OFFICIAL
+BUILD_USERNAME := ZAID_KHAN
+BUILD_HOSTNAME := Elixir
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lisa
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := evolution_lisa
+PRODUCT_NAME := aosp_lisa
 PRODUCT_MODEL := Xiaomi 11 Lite NE
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
